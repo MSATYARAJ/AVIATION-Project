@@ -65,30 +65,13 @@ select a.TAILNUM,AirTime,flightdate,sum(b.Distance) AS "Total Distance"
 		from airline as a
 			LEFT join 
     airline_1  as b using(INDEX1) 
-where a.tailnum= "N190AA" AND b.AirTime=50 AND a.flightdate="2017-01-18" 
+where a.tailnum= "N190AA" AND b.AirTime=50 AND a.flightdate="2017-01-1" 
     group by   a.tailnum ;
 									
     
     
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  select * from flight_1 where AirlineID = 20436; 
-   select * from DATA1 where AirlineID = 20436; 
-  
-  SELECT COUNT(*) FROM flight_1 WHERE TailNum = "N954FR";
-  SELECT COUNT(*) FROM DATA1 WHERE TailNum = "N954FR";
   
     
     
