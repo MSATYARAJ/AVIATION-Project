@@ -65,7 +65,7 @@ select a.TAILNUM,AirTime,flightdate,sum(b.Distance) AS "Total Distance"
 		from airline as a
 			LEFT join 
     airline_1  as b using(INDEX1) 
-where a.tailnum= "N190AA" AND b.AirTime=50 AND a.flightdate="2017-01-1" 
+where a.tailnum= "N190AA" AND b.AirTime=50 AND a.flightdate="2017-01-01" 
     group by   a.tailnum ;
 									
     
